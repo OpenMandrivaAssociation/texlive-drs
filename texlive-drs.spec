@@ -1,3 +1,9 @@
+# revision 19232
+# category Package
+# catalog-ctan /macros/latex/contrib/drs
+# catalog-date 2010-07-03 21:56:37 +0200
+# catalog-license lppl1.3
+# catalog-version 1.1b
 Name:		texlive-drs
 Version:	1.1b
 Release:	1
@@ -44,6 +50,7 @@ the covington package.
 %doc %{_texmfdistdir}/doc/latex/drs/README
 %doc %{_texmfdistdir}/doc/latex/drs/drsdoc.pdf
 %doc %{_texmfdistdir}/doc/latex/drs/drsdoc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ the covington package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
