@@ -6,7 +6,7 @@
 # catalog-version 1.1b
 Name:		texlive-drs
 Version:	1.1b
-Release:	2
+Release:	3
 Summary:	Typeset Discourse Representation Structures (DRS)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drs
