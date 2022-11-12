@@ -1,18 +1,12 @@
-# revision 19232
-# category Package
-# catalog-ctan /macros/latex/contrib/drs
-# catalog-date 2010-07-03 21:56:37 +0200
-# catalog-license lppl1.3
-# catalog-version 1.1b
 Name:		texlive-drs
-Version:	1.1b
-Release:	11
+Version:	19232
+Release:	1
 Summary:	Typeset Discourse Representation Structures (DRS)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drs
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drs.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drs.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drs.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drs.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ variables and conditions. The package is based on DRS macros in
 the covington package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,24 +38,10 @@ the covington package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1b-2
-+ Revision: 751094
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1b-1
-+ Revision: 718264
-- texlive-drs
-- texlive-drs
-- texlive-drs
-- texlive-drs
-
