@@ -1,6 +1,6 @@
 Name:		texlive-drs
 Version:	19232
-Release:	1
+Release:	2
 Summary:	Typeset Discourse Representation Structures (DRS)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drs
