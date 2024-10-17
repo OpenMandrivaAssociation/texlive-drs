@@ -3,7 +3,7 @@ Version:	19232
 Release:	2
 Summary:	Typeset Discourse Representation Structures (DRS)
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drs
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/drs
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drs.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drs.doc.r%{version}.tar.xz
